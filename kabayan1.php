@@ -357,7 +357,7 @@ echo "\n".color("white","Claim maning?: y/n ");
                         echo color("white", "-] NOMOR SALAH");
                         echo "\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
                         echo color("white", "!] MASUKAN LAGI\n");
-                        gotoulang;
+                        ulang;
                     }
                     //  }
                     

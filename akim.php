@@ -197,7 +197,7 @@ ulang:
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
          }else if($pilih1 == "n" || $pilih1 == "N"){
-            system('php tn.php');
+            
          }else{
          echo color("white","-] GAGAL!!!\n");
          }

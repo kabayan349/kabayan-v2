@@ -77,12 +77,12 @@ ulang:
         save("token.txt",$token); 
         echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","CLAIM A..");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," ENTENI SUU");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(35);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","Message: ".$message);
@@ -91,12 +91,12 @@ ulang:
         echo "\n".color("white"," Message: ".$message);
 	gocar:
         echo "\n".color("white","CLAIM B.. ");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," SABARR SUUU");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","Message: ".$message);
@@ -105,12 +105,12 @@ ulang:
         echo "\n".color("white"," Message: ".$message);
         gofood:
         echo "\n".color("white","CLAIM C..");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," BADOG KWEEH");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(0);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":""}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
         sleep(2);
